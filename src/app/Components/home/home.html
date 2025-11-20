@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+  </head>
+  <body>
+    <main class="geral">
+      <header class="cabecalho">
+        <img src="/LogoPokemon.png" alt="Pokedex" />
+      </header>
+      <section class="pagina-controle">
+        <button (click)="paginaAnterior()" [disabled]="offset === 0">Página Anterior</button>
+        <button (click)="proximaPagina()">Próxima Página</button>
+      </section>
+      <section class="cards">
+        <app-card-pokemon
+          *ngFor="let pokemon of listaPokemons"
+          [idPokemon]="pokemon.id"
+          [nomePokemon]="pokemon.name"
+          [fotoPokemon]="pokemon.picture"
+          [tipo1Pokemon]="pokemon.tipo1"
+          [tipo2Pokemon]="pokemon.tipo2"
+        ></app-card-pokemon>
+      </section>
+      <footer class="rodape">
+        <div class="rodape-info">
+          <p class="rodape-titulo">Pokédex</p>
+          <p class="rodape-creditos">Feita por Marcio Gabriel</p>
+        </div>
+        <div class="rodape-contatos">
+          <p>Contatos:</p>
+          <a href="https://www.linkedin.com/in/marcio-mazega" target="_blank" rel="noopener"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/Schinor" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

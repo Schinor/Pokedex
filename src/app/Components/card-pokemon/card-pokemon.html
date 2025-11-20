@@ -1,0 +1,15 @@
+<section class="geral" [ngClass]="tipo1Pokemon ? 'bg-' + tipo1Pokemon : ''">
+  <div class="infoPok">
+    <h2>{{ $any(nomePokemon) | capitalize }}</h2>
+    <p>{{ idPokemon }}</p>
+  </div>
+  <section class="detalhesPok">
+    <div class="atributosPok">
+      <h3 [ngClass]="tipo1Pokemon">{{ $any(tipo1Pokemon) | capitalize }}</h3>
+      <h4 *ngIf="tipo2Pokemon" [ngClass]="tipo2Pokemon">{{ $any(tipo2Pokemon) | capitalize }}</h4>
+    </div>
+    <div class="imagemPok">
+      <img [src]="fotoPokemon" alt="" />
+    </div>
+  </section>
+</section>
