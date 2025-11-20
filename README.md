@@ -1,59 +1,73 @@
-# Pokedex
+# Pokédex - Synapse
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.1.
+Este projeto é uma Pokédex desenvolvida como parte da disciplina de Front-end do Synapse, oferecido pelo CIAg e ministrada pelo professor Finoti.
 
-## Development server
+A aplicação permite aos usuários visualizar uma lista de Pokémon, com a capacidade de navegar por páginas para descobrir mais criaturas.
 
-To start a local development server, run:
+## ✨ Funcionalidades
+
+*   **Listagem de Pokémon:** Exibe os Pokémon em cards, mostrando seu nome, ID, imagem e tipos.
+*   **Paginação:** Navegue pela Pokédex com os botões de "Próxima Página" e "Página Anterior".
+*   **Design Responsivo:** A interface se adapta a diferentes tamanhos de tela, de celulares a desktops.
+*   **Estilização Dinâmica:** Os cards dos Pokémon mudam de cor com base no seu tipo principal.
+
+## 🛠️ Tecnologias Utilizadas
+
+*   **[Angular](https://angular.io/):** Framework principal para a construção da interface.
+*   **[TypeScript](https://www.typescriptlang.org/):** Superset do JavaScript que adiciona tipagem estática.
+*   **[PokeAPI](https://pokeapi.co/):** API utilizada para obter os dados dos Pokémon.
+*   **HTML5 & CSS3:** Para a estruturação e estilização das páginas.
+
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
+
+*   [Node.js](https://nodejs.org/en/) (que inclui o npm)
+*   [Angular CLI](https://github.com/angular/angular-cli)
+
+### Instalação
+
+1.  Clone o repositório:
+    ```bash
+    git clone <url-do-repositorio>
+    ```
+2.  Navegue até o diretório do projeto:
+    ```bash
+    cd Pokedex
+    ```
+3.  Instale as dependências:
+    ```bash
+    npm install
+    ```
+
+### Servidor de Desenvolvimento
+
+Para iniciar o servidor de desenvolvimento, execute:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Abra seu navegador e acesse `http://localhost:4200/`. A aplicação será recarregada automaticamente se você alterar qualquer um dos arquivos de origem.
 
-## Code scaffolding
+### Build
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Para compilar o projeto para produção, execute:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Os artefatos da compilação serão armazenados no diretório `dist/`.
 
-## Running unit tests
+### Executando Testes Unitários
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Para executar os testes unitários com o [Karma](https://karma-runner.github.io), use o comando:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## 👨‍💻 Autor
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+*   **Marcio Gabriel** - [Schinor](https://github.com/Schinor)
